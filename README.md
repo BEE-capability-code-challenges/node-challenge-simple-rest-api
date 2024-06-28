@@ -1,6 +1,6 @@
 # Node challenge: Pet Adoption RESTful API
 
-## Overview
+# 1. Overview
 
 This repository is intended to be a quick template to help practice API concepts with NodeJS.
 
@@ -8,8 +8,9 @@ A local animal shelter wants to create a website to facilitate pet adoption. The
 The platform should allow admin users to view and manage pet profiles, review, and approve or reject open adoption requests. 
 The public side of the API it should allow users to view pets available for adoption as well as submit adoption requests.
 
-## Environment Prerequisites
+# 2. Environment Prerequisites
 
+## Windows
 1. Install NVM.
 	[Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
 2. Install Node JS (LTS) and set it as default
@@ -17,7 +18,12 @@ The public side of the API it should allow users to view pets available for adop
     nvm install 20.11.0
     nvm alias default 20.11.0
     ```
-## Build Instructions
+## MacOs
+
+## Linux
+
+
+# 3. Build Instructions
 
 1. Install yarn globally for dependency management.
     `npm install yarn -g`
@@ -31,21 +37,47 @@ The public side of the API it should allow users to view pets available for adop
 6. Run unit tests
     `yarn run test`
 
-## Instructions
+# 4. Instructions
 
-### [Functional Requirements](./functional_requirements.md)
-### [Business Rules](./specifications.md)
+## 4.1 Functional Requirements
+In this [link](./functional_requirements_example.md) you will find the definition of all expected CRUD endpoints.
 
-## [Technical Requirements](./technical_requirements.md)
+## 4.2 Business Rules
 
-## Testing and Validation Requisites - TBD
+In this [link](./business_rules_example.md) you will find the ....
 
-## Acceptance Criteria
+## 4.3 Technical Requirements
 
-### [Evaluation criteria](./evaluation.md)
-### [Expected documentation and deliverables](./documentation.md)
+* Use TypeScript for server-side development (don't use any).
+* Implement Express.js to create the RESTful API.
+* Use SQLite or another suitable database to store pet and user data.
+* Apply proper error handling and validation throughout the application.
+* Include unit tests for critical features and components using Jest.
 
-## Resources
+# 5. Testing and Validation Requisites
+
+(Incluir pantallas)
+
+# 6. Acceptance Criteria
+
+## 6.1 Evaluation criteria
+
+* **Functionality:** Does the application meet the specified requirements?
+* **Code quality:** Is the code well structured, readable, and meets best practices?
+* **Tests:** Are there unit tests for critical components and do they all pass 100%?
+* **Documentation:** Is the project well documented and does it provide clear instructions for setup and use?
+  
+## 6.2 Expected documentation and deliverables
+
+* Include clear instructions for API endpoints and data structures. (Especificar a que se refiere... swager?)
+* Document any additional features or functionality implemented.
+
+(Elaborar un poco mas las instrucciones aclarar que sea la rama main, del fork.) 
+* Submit your project as a GitHub repository to your tutor, specify the appropriate branch.
+* Include a clear README.md (especificar que es uno nuevo no el del code challenge, o especificar que secciones va a actualizar y que secciones del README original se mantienen. Definir que debe de contener el README.) file that explains your project, its features, and how to run it.
+* Include Postman collection for easy review. (especificar ambos pantallazos y archivo. Detallar cada entregable)
+
+# 7. Resources
 
 * Boilerplate repositories where this exercise was based
     * https://github.com/mwolfhoffman/node-jwt-sqlite-typescript-starter
@@ -54,6 +86,6 @@ The public side of the API it should allow users to view pets available for adop
 * [Ethereal Email](https://ethereal.email/): Fake SMTP service to simulate email sending.
     * [Using nodemailer with ethereal example](https://dev.to/berviantoleo/email-testing-using-ethereal-inb)
 * [Manual oficial Typescript](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
-### Source of seed information used in this repo
+## Source of seed information used in this repo
 * [Dog breeds](https://github.com/jfairbank/programming-elm.com/blob/master/dog-breeds.json)
 * [Cat breeds](https://github.com/jfairbank/programming-elm.com/blob/master/cat-breeds.json)
