@@ -46,6 +46,7 @@ The public side of the API it should allow users to view pets available for adop
     ```
     yarn install
     ``` 
+    ![build-instruction2](build-instruction2.png)
 4. After installing the project you can run this command to configure the database
     ```
     yarn run db:seed
