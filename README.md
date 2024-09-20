@@ -15,8 +15,15 @@ The public side of the API it should allow users to view pets available for adop
 	[Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
 2. Install Node JS (LTS) and set it as default
     ```
-    nvm install 20.11.0
-    nvm alias default 20.11.0
+    nvm install lts
+    ```
+3. List the installed Node versions
+    ```
+    nvm list
+    ```
+4. Set as defatult your lts version
+    ```
+    nvm alias default x.x.x
     ```
 ## MacOs
 
