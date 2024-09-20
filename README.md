@@ -13,7 +13,7 @@ The public side of the API it should allow users to view pets available for adop
 ## Windows
 1. Install NVM.
 	[Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
-2. Install Node JS (LTS) and set it as default
+2. Install Node JS (LTS) and use it
     ```
     nvm install lts
     ```
@@ -21,32 +21,42 @@ The public side of the API it should allow users to view pets available for adop
     ```
     nvm ls
     ```
-4. Switch to the latest installed version
+4. Switch to the latest Node installed version
     ```
     nvm use x.x.x
     ```
-5. Displays the current running version of nvm
+5. Displays the current running version of NVM
     ```
     nvm -v
     ```
-6. Displays the current running version of nvm
+6. Displays the current running version of Node
     ```
     node -v
     ```
 
 # 3. Build Instructions
 
-1. Install yarn globally for dependency management.
-    `npm install yarn -g`
-2. Fork this repository and download it locally.
-3. Go to the root directory of the repository and run this command to download the initial dependencies.
-    `yarn install` 
-4. After installing the project you can run this command to configure the database.
-    `yarn run db:seed` 
-5. Run the project.
-    `yarn run dev`
+1. Install yarn globally for dependency management
+    ```
+    npm install yarn -g
+    ```
+2. Fork this repository and download it locally
+3. Go to the root directory of the repository and run this command to download the initial dependencies
+    ```
+    yarn install
+    ``` 
+4. After installing the project you can run this command to configure the database
+    ```
+    yarn run db:seed
+    ``` 
+5. Run the project
+    ```
+    yarn run dev
+    ```
 6. Run unit tests
-    `yarn run test`
+    ```
+    yarn run test
+    ```
 
 # 4. Instructions
 
