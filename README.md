@@ -51,6 +51,7 @@ The public side of the API it should allow users to view pets available for adop
     ```
     yarn run db:seed
     ``` 
+    ![build-instruction3](build-instruction3.png)
 5. Run the project
     ```
     yarn run dev
