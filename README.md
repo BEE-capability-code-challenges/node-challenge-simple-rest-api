@@ -19,15 +19,26 @@ The public side of the API it should allow users to view pets available for adop
     ```
 3. List the installed Node versions
     ```
-    nvm list
+    nvm ls
     ```
-4. Set as defatult your lts version
+4. Switch to the latest installed version
     ```
-    nvm alias default x.x.x
+    nvm use x.x.x
     ```
-## MacOs
+5. Displays the current running version of nvm
+    ```
+    nvm -v
+    ```
+6. Displays the current running version of nvm
+    ```
+    node -v
+    ```
 
-## Linux
+## MacOs and Linux
+1. Install Node JS (LTS) and set it as default
+    ```
+    nvm install lts
+    ```
 
 
 # 3. Build Instructions
