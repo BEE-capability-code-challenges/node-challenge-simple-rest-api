@@ -56,6 +56,7 @@ The public side of the API it should allow users to view pets available for adop
     ```
     yarn run dev
     ```
+    ![build-instruction4](build-instruction4.png)
 6. Run unit tests
     ```
     yarn run test
