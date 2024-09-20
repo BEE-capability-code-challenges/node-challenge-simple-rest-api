@@ -40,6 +40,7 @@ The public side of the API it should allow users to view pets available for adop
     ```
     npm install yarn -g
     ```
+    ![build-instruction1](build-instruction1.png)
 2. Fork this repository and download it locally
 3. Go to the root directory of the repository and run this command to download the initial dependencies
     ```
