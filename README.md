@@ -34,13 +34,6 @@ The public side of the API it should allow users to view pets available for adop
     node -v
     ```
 
-## MacOs and Linux
-1. Install Node JS (LTS) and set it as default
-    ```
-    nvm install lts
-    ```
-
-
 # 3. Build Instructions
 
 1. Install yarn globally for dependency management.
