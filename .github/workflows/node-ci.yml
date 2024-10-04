@@ -30,4 +30,4 @@ jobs:
     - run: npm run build --if-present
     - run: npm run lint:check
     - run: npm run spelling:check
-    - run: npm test
+    #- run: npm test # To be enabled in PR with base unit tests
