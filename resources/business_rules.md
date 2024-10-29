@@ -16,12 +16,17 @@ Adoption applications must contain the following information:
 * Applicant name
 * Applicant email
 * Applicant phone number
+* Applicant Address 
+    * Street address
+    * City
+    * State
+    * Post Code
+    * Country
 * Pet you want to adopt
-* Notes where you can explain reasons why the adoption request was accepted or rejected (filled out by administrative users)
+* Notes - where you can explain reasons why the adoption request was accepted or rejected (filled out by administrative users)
 * Adoption application status (e.g. "Received", "In Review", "Accepted", "Rejected")
 
 #### Additional rules to consider
-
 * See list of pets available for adoption
     * Allow filters by species, breed, gender, age/lifeStage (puppy < 1 year, adult 1 to 7 years, senior > 7 years)
 * Check pet details
