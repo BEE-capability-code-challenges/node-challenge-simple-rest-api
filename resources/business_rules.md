@@ -1,7 +1,7 @@
 ### Business Rules
 
 Each pet profile must include the following information:
-* Unique pet ID
+* Unique pet ID (automatically created)
 * Pet's name
 * Species (e.g. "Dog", "Cat") 
 * Breed (e.g., depending on the species, "Labrador Retriever" for dog, "Persian" for cat, etc.)

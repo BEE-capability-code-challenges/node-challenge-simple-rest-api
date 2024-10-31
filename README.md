@@ -53,6 +53,8 @@ The public side of the API it should allow users to view pets available for adop
     ``` 
     ![build-instruction3](./resources/build-instruction3.png)
 5. Run the project
+    First go to `src/config` folder and make a copy the env file and name it just `.env`, then you can run the server locally
+
     ```
     yarn run dev
     ```
@@ -94,28 +96,22 @@ In this [link](./resources/business_rules.md) you will find the ....
 * **Documentation:** Is the project well documented, used JSDoc comments to describe functions, and does it provide clear instructions for setup and use?
   
 ## 6.2 Expected documentation and deliverables
-
-WIP - 
-* Fork this repository from a personal Github account
-* Submit your project as a GitHub repository to your tutor, including a clear README.md file that explains your project, its features, and how to run it.
-* Include clear instructions for API endpoints and data structures.
+* Fork this repository from a personal Github account, work on your copy there
+* Submit your link to your form to your tutor, including a clear SUBMISSION.md file that explains your project, specify the appropriate branch to evaluate and include clear instructions for API endpoints and data structures.
 * Document any additional features or functionality implemented.
-* Include Postman collection file for easy review.
-*
+* All you functions must have JSDoc comments
+* Include Postman collection file for easy review ([Export Postman collection](https://learning.postman.com/docs/getting-started/importing-and-exporting/exporting-data))
 
-* Submit your project as a GitHub repository to your tutor, specify the appropriate branch.
-* Include a clear README.md (especificar que es uno nuevo no el del code challenge, o especificar que secciones va a actualizar y que secciones del README original se mantienen. Definir que debe de contener el README.) file that explains your project, its features, and how to run it.
-* Include Postman collection for easy review. (especificar ambos pantallazos y archivo. Detallar cada entregable)
 
 # 7. Resources
 
 * Boilerplate repositories where this exercise was based
     * https://github.com/mwolfhoffman/node-jwt-sqlite-typescript-starter
     * https://github.com/Chensokheng/rest-api/tree/master
-* [Introducción a NodeJS](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) 
+* [Intro to NodeJS](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) 
 * [Ethereal Email](https://ethereal.email/): Fake SMTP service to simulate email sending.
     * [Using nodemailer with ethereal example](https://dev.to/berviantoleo/email-testing-using-ethereal-inb)
-* [Manual oficial Typescript](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
+* [Official Typescript handbook](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
 
 ## Source of seed information used in this repo
 * [Dog breeds](https://github.com/jfairbank/programming-elm.com/blob/master/dog-breeds.json)
