@@ -3,12 +3,32 @@ import { Request, Response } from 'express';
 import * as petService from './pet.service';
 import { IPet } from './pet.model';
 
-export const getPets = async (req: Request, res: Response) => {
+/**
+ * Retrieves a list of pets from the database and sends it in the response.
+ *
+ * @async
+ * @function getPets
+ * @param {Request} req - Express request object.
+ * @param {Response} res - Express response object.
+ * @returns {Promise<void>} JSON array of pets
+ *
+ */
+export const getPets = async (req: Request, res: Response): Promise<void> => {
     const pets = await petService.getPets();
     console.log(pets)
     res.status(200).json(pets);
 };
 
+/**
+ * Adds a new pet to the database and returns the created pet in the response.
+ *
+ * @async
+ * @function getPets
+ * @param {Request} req - Express request object.
+ * @param {Response} res - Express response object.
+ * @returns {Promise<void>} JSON object of the created pet
+ *
+ */
 export const addPet = async (req: Request, res: Response) => {
   try {
 
