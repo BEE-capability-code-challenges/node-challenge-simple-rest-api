@@ -2,7 +2,8 @@
     "version": "0.2",
     "language": "en",
     "ignorePaths": [
-        "./coverage/**/*"
+        "./coverage/**/*",
+        "./src/config/seeds/**/*.json"
     ],
     "words": [
         "DataTypes.DATEONLY"
