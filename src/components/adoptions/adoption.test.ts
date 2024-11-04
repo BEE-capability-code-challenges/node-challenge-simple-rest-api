@@ -1,7 +1,7 @@
 import request from "supertest";
 import app from "../../app";
 import testDatabase from "../../config/test.database.config";
-import { AdoptionRecord, IAdoption } from "./adoption.model";
+import { AdoptionRecord, ApplicationStatus, IAdoption } from "./adoption.model";
 
 beforeAll(async () => {
   await testDatabase.sync({ force: true }); // Reset the database before each test run
@@ -13,13 +13,13 @@ beforeAll(async () => {
       phone: '0123456789',
       street: 'a-street',
       streetNumber: 0,
-      city: "", 
-      state: "",
+      city: "a-city", 
+      state: "a-state",
       streetZipCode: '123',
-      country: "",
-      petId: 0,
-      notes: "",
-      status: "Review"
+      country: 'a-country',
+      petId: 1,
+      notes: 'a-notes',
+      status: ApplicationStatus.Review
     },
   ];
   await AdoptionRecord.bulkCreate(seed);
