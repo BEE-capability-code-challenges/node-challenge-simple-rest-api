@@ -1,7 +1,11 @@
 import { DataTypes, Model } from 'sequelize';
 import database from '../../config/database.config';
 
-export type ApplicationStatus = 'Review' | 'Accepted' | 'Rejected';
+export enum ApplicationStatus {
+ Review = 'Review',
+ Accepted = 'Accepted',
+ Rejected = 'Rejected'
+};
 
 // Interface
 export interface IAdoption {
@@ -85,8 +89,9 @@ AdoptionRecord.init({
     allowNull: false
   },
   status: {
-    type: DataTypes.STRING,
-    defaultValue: DataTypes.ENUM('Review', 'Accepted', 'Rejected'),
+    type: DataTypes.ENUM('Review', 'Accepted', 'Rejected'),
+    allowNull: false,
+    defaultValue: ApplicationStatus.Review
   }
 }, {
   sequelize: database,
