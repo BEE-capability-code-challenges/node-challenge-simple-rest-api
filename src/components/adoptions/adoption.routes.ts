@@ -5,7 +5,7 @@ import * as adoptionController from './adoption.controller';
 const adoptionRoutes = express.Router();
 
 
-adoptionRoutes.post('/', adoptionController.addPet);
+adoptionRoutes.post('/', adoptionController.addAdoption);
 
 // Add more routes as needed
 export default adoptionRoutes;
