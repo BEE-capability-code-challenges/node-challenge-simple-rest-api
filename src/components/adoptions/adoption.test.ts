@@ -30,5 +30,13 @@ afterAll(async () => {
 });
 
 describe('Adoption', () => {
-  describe();
+  describe('POST /v1/adoption', () => {
+    it('should create a new adoption row', () => {
+      // Given
+
+      // When
+
+      // Then
+    });
+  });
 });
