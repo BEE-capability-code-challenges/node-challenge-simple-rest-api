@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json()); // Convert json payload into js objects for easier manipulation in code
 app.use(helmet()); // Enhance http headers security
 app.use(cors());// enabling CORS for all requests
-app.use(morgan('combined'));// enhanced logs - TODO: add a common logger class
+app.use(morgan('combined'));// enhanced logs formatter
 
 // Routes definition
 app.use('/v1',  baseRouter);

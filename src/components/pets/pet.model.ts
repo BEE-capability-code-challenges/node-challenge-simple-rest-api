@@ -6,7 +6,10 @@ export type PetSpecies = 'Dog'| 'Cat';
 export type PetGender = 'Male'| 'Female';
 export type PetAdoptionStatus = "Available" | "Pending" | "Adopted";
 
-// Interface
+/**
+ * Pet Base Model
+ * @interface IPet
+ */
 export interface IPet {
   id?: number;
   name: string;
@@ -20,7 +23,12 @@ export interface IPet {
   adoptionStatus: PetAdoptionStatus;
 }
 
-// Pet DB model
+/**
+ * Class for managing pet Model and interactions with the database.
+ *
+ * @class PetRecord
+ * 
+ */
 export class PetRecord extends Model<IPet> implements IPet {
   declare id: number;
   declare name: string;

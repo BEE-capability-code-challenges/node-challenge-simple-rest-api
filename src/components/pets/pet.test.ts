@@ -44,8 +44,8 @@ describe("Pet API", () => {
       const response = await request(app).get("/v1/pets");
 
       expect(response.status).toBe(200);
-      expect(response.body.length).toEqual(1);
-      expect(response.body[0].name).toBe("Bella");
+      expect(response.body.data.length).toEqual(1);
+      expect(response.body.data[0].name).toBe("Bella");
     });
   });
 
@@ -54,7 +54,7 @@ describe("Pet API", () => {
       const response = await request(app).get(`/v1/pets/1`);
 
       expect(response.status).toBe(200);
-      expect(response.body.name).toBe("Bella");
+      expect(response.body.data.name).toBe("Bella");
     });
 
     it("should return 404 if pet not found", async () => {
@@ -81,11 +81,11 @@ describe("Pet API", () => {
       const response = await request(app).post("/v1/pets").send(petData);
 
       expect(response.status).toBe(200);
-      expect(response.body.name).toBe(petData.name);
-      expect(response.body.breed).toBe(petData.breed);
-      expect(response.body.gender).toBe(petData.gender);
-      expect(response.body.dateOfAdoption).toBe(petData.dateOfAdoption);
-      expect(response.body.adoptionStatus).toBe(petData.adoptionStatus);
+      expect(response.body.data.name).toBe(petData.name);
+      expect(response.body.data.breed).toBe(petData.breed);
+      expect(response.body.data.gender).toBe(petData.gender);
+      expect(response.body.data.dateOfAdoption).toBe(petData.dateOfAdoption);
+      expect(response.body.data.adoptionStatus).toBe(petData.adoptionStatus);
     });
   });
 
@@ -108,8 +108,8 @@ describe("Pet API", () => {
         .send(updatedPetData);
 
       expect(response.status).toBe(200);
-      expect(response.body.description).toBe(updatedPetData.description);
-      expect(response.body.profileImg).toBe(updatedPetData.profileImg);
+      expect(response.body.data.description).toBe(updatedPetData.description);
+      expect(response.body.data.profileImg).toBe(updatedPetData.profileImg);
     });
 
     it("should return 404 if pet not found", async () => {
