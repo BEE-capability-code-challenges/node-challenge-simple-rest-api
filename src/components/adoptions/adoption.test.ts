@@ -29,9 +29,39 @@ afterAll(async () => {
   await testDatabase.close(); // Close the database connection after all tests
 });
 
-describe('Adoption', () => {
-  describe('POST /v1/adoption', () => {
-    it('should create a new adoption row', () => {
+describe('Adoption API', () => {
+  describe('POST /v1/adoptions', () => {
+    it('should submit an adoption', () => {
+      // Given
+
+      // When
+
+      // Then
+    });
+  });
+
+  describe('GET /v1/adoptions?email=:string', () => {
+    it('should return a list of adoptions filtered by email', () => {
+      // Given
+
+      // When
+
+      // Then
+    });
+  });
+
+  describe('GET /v1/adoptions?status=:string', () => {
+    it('should return a list of adoptions filtered by status', () => {
+      // Given
+
+      // When
+
+      // Then
+    });
+  });
+
+  describe('POST /v1/adoptions/:id/resolve', () => {
+    it('should resolve an adoption', () => {
       // Given
 
       // When
