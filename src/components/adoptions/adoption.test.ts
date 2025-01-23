@@ -29,7 +29,7 @@ afterAll(async () => {
   await testDatabase.close(); // Close the database connection after all tests
 });
 
-describe.skip('Adoption API', () => {
+describe('Adoption API', () => {
   describe('POST /v1/adoptions', () => {
     it('should submit an adoption', async () => {
       // Given
