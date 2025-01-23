@@ -5,7 +5,7 @@ export enum ApplicationStatus {
  Review = 'Review',
  Accepted = 'Accepted',
  Rejected = 'Rejected'
-};
+}
 
 // Interface
 export interface IAdoption {
@@ -59,7 +59,10 @@ AdoptionRecord.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  street: '',
+  street: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
   streetNumber: {
     type: DataTypes.INTEGER,
     allowNull: false
@@ -86,7 +89,7 @@ AdoptionRecord.init({
   },
   notes: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: true
   },
   status: {
     type: DataTypes.ENUM('Review', 'Accepted', 'Rejected'),

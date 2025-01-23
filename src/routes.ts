@@ -1,5 +1,5 @@
 import express from 'express'; 
-import petRoutes from './components/pets/pet.routes'
+import petRoutes from './components/pets/pet.routes';
 
 const baseRouter = express.Router();
 
@@ -10,7 +10,7 @@ baseRouter.use('/pets', petRoutes);
 baseRouter.use('/', express.Router().get(
 	'/test',
 	(req, res) => {
-        return res.status(200).json('test',);
+        return res.status(200).json('test');
     }
 ));
 
