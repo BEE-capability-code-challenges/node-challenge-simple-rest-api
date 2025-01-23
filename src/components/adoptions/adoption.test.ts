@@ -85,7 +85,7 @@ describe('Adoption API', () => {
   describe('POST /v1/adoptions/:id/accept', () => {
     it('should resolve an adoption',  async () => {
       // Given
-      const adoptionTobeReviewed: IAdoption = {
+      const reviewedAdoption: IAdoption = {
         id: 2,
         name: "name",
         email: "email@domain.com",
@@ -99,7 +99,7 @@ describe('Adoption API', () => {
         petId: 1,
         status: ApplicationStatus.Review
       };
-      await AdoptionRecord.create(adoptionTobeReviewed);
+      await AdoptionRecord.create(reviewedAdoption);
 
       // When
       const adoption = await AdoptionRecord.findByPk(2);
