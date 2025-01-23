@@ -63,6 +63,7 @@ The public side of the API it should allow users to view pets available for adop
     ```
     yarn run test
     ```
+    ![build-instruction5](./resources/build-instruction5.png)
 
 # 4. Instructions
 
