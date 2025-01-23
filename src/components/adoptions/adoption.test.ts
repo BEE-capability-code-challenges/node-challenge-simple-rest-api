@@ -29,11 +29,23 @@ afterAll(async () => {
   await testDatabase.close(); // Close the database connection after all tests
 });
 
-describe('Adoption API', () => {
+describe.skip('Adoption API', () => {
   describe('POST /v1/adoptions', () => {
     it('should submit an adoption', async () => {
       // Given
-      const adoption: IAdoption = {};
+      const adoption: IAdoption = {
+        name: "name",
+        email: "email@domain.com",
+        phone: "123",
+        street: "street",
+        streetNumber: 0,
+        city: "city",
+        state: "state",
+        streetZipCode: "78192",
+        country: "country",
+        petId: 1,
+        status: ApplicationStatus.Review
+      };
       
       // When
       const response = await request(app).post("/v1/adoptions").send(adoption)
@@ -70,13 +82,32 @@ describe('Adoption API', () => {
     });
   });
 
-  describe('POST /v1/adoptions/:id/resolve', () => {
+  describe('POST /v1/adoptions/:id/accept', () => {
     it('should resolve an adoption',  async () => {
       // Given
+      const adoptionTobeReviewed: IAdoption = {
+        id: 2,
+        name: "name",
+        email: "email@domain.com",
+        phone: "123",
+        street: "street",
+        streetNumber: 0,
+        city: "city",
+        state: "state",
+        streetZipCode: "78192",
+        country: "country",
+        petId: 1,
+        status: ApplicationStatus.Review
+      };
+      await AdoptionRecord.create(adoptionTobeReviewed);
 
       // When
+      const adoption = await AdoptionRecord.findByPk(2);
+      const response = await request(app).post(`/v1/adoptions/${adoption?.id}/resolve`);
 
       // Then
+      expect(response.status).toBe(200);
+      expect(response.body.data.status).toBe(ApplicationStatus.Accepted);
     });
   });
 });

@@ -20,7 +20,7 @@ export interface IAdoption {
   streetZipCode: string;
   country: string; // TODO: normalization
   petId: number;
-  notes: string; // TODO: normalization
+  notes?: string; // TODO: normalization
   status: ApplicationStatus;
 }
 
