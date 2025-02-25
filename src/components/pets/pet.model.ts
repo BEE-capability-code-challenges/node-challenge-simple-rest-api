@@ -1,10 +1,10 @@
 import { DataTypes, Model } from 'sequelize';
-import database from '../../config/database.config'
+import database from '../../config/database.config';
 
 // Custom types
 export type PetSpecies = 'Dog'| 'Cat';
 export type PetGender = 'Male'| 'Female';
-export type PetAdoptionStatus = "Available" | "Pending" | "Adopted"
+export type PetAdoptionStatus = "Available" | "Pending" | "Adopted";
 
 /**
  * Pet Base Model
