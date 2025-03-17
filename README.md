@@ -13,54 +13,54 @@ The public side of the API it should allow users to view pets available for adop
 ## Windows
 1. Install NVM.
 	[Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
-2. Install Node JS wich must be a LTS version - example
+2. Install Node JS wich must be a LTS version - example.
     ```
     nvm install lts
     ```
-3. List the installed Node versions
+3. List the installed Node versions.
     ```
     nvm ls
     ```
-4. Switch to the latest Node installed version - Must be >= 20.11.0 for this challenge
+4. Switch to the latest Node installed version - Must be >= 20.11.0 for this challenge.
     ```
     nvm use 20.11.0
     ```
-5. Displays the current running version of NVM
+5. Displays the current running version of NVM.
     ```
     nvm -v
     ```
-6. Displays the current running version of Node
+6. Displays the current running version of Node.
     ```
     node -v
     ```
 
 # 3. Build Instructions
 
-1. Install yarn globally for dependency management
+1. Install yarn globally for dependency management.
     ```
     npm install yarn -g
     ```
     ![build-instruction1](./resources/build-instruction1.png)
-2. Fork this repository and download it locally
-    [Github Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
-3. Go to the root directory of the repository and run this command to download the initial dependencies
+2. Fork this repository and download it locally.
+    [Github Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo).
+3. Go to the root directory of the repository and run this command to download the initial dependencies.
     ```
     yarn install
     ``` 
     ![build-instruction2](./resources/build-instruction2.png)
-4. After installing the project you can run this command to configure the database
+4. After installing the project you can run this command to configure the database.
     ```
     yarn run db:seed
     ``` 
     ![build-instruction3](./resources/build-instruction3.png)
 5. Run the project
-    First go to `src/config` folder and make a copy the env file and name it just `.env`, then you can run the server locally
+    First go to `src/config` folder and make a copy the env file and name it just `.env`, then you can run the server locally.
 
     ```
     yarn run dev
     ```
     ![build-instruction4](./resources/build-instruction4.png)
-6. Run unit tests
+6. Run unit tests.
     ```
     yarn run test
     ```
@@ -73,7 +73,7 @@ In this [link](./resources/functional_requirements.md) you will find the definit
 
 ## 4.2 Business Rules
 
-In this [link](./resources/business_rules.md) you will find the ....
+In this [link](./resources/business_rules.md) you will find the business rules for the app.
 
 ## 4.3 Technical Requirements
 * Use TypeScript for server-side development.
