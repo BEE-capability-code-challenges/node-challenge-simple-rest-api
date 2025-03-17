@@ -15,7 +15,7 @@ The public side of the API it should allow users to view pets available for adop
 	[Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
 2. Install Node JS wich must be a LTS version - example
     ```
-    nvm install 20.11.0
+    nvm install lts
     ```
 3. List the installed Node versions
     ```
@@ -42,6 +42,7 @@ The public side of the API it should allow users to view pets available for adop
     ```
     ![build-instruction1](./resources/build-instruction1.png)
 2. Fork this repository and download it locally
+    [Github Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 3. Go to the root directory of the repository and run this command to download the initial dependencies
     ```
     yarn install
