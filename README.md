@@ -12,8 +12,9 @@ The public side of the API it should allow users to view pets available for adop
 
 ## Windows
 1. Install NVM.
-	[Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide){:target="_blank"}
+	[Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide)
     <a href="https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide" targer="_blank">Windows</a>
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
 2. Install Node JS wich must be a LTS version - example.
     ```
     nvm install lts
