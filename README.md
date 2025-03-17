@@ -40,40 +40,40 @@ The public side of the API it should allow users to view pets available for adop
     ```
     npm install yarn -g
     ```
-    ![build-instruction1](./resources/build-instruction1.png)
+    ![build-instruction1](./resources/images/build-instruction1.png)
 2. Fork this repository and download it locally.
     [Github Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo).
 3. Go to the root directory of the repository and run this command to download the initial dependencies.
     ```
     yarn install
     ``` 
-    ![build-instruction2](./resources/build-instruction2.png)
+    ![build-instruction2](./resources/images/build-instruction2.png)
 4. After installing the project you can run this command to configure the database.
     ```
     yarn run db:seed
     ``` 
-    ![build-instruction3](./resources/build-instruction3.png)
+    ![build-instruction3](./resources/images/build-instruction3.png)
 5. Run the project
     First go to `src/config` folder and make a copy the env file and name it just `.env`, then you can run the server locally.
 
     ```
     yarn run dev
     ```
-    ![build-instruction4](./resources/build-instruction4.png)
+    ![build-instruction4](./resources/images/build-instruction4.png)
 6. Run unit tests.
     ```
     yarn run test
     ```
-    ![build-instruction5](./resources/build-instruction5.png)
+    ![build-instruction5](./resources/images/build-instruction5.png)
 
 # 4. Instructions
 
 ## 4.1 Functional Requirements
-In this [link](./resources/functional_requirements.md) you will find the definition of all expected CRUD endpoints.
+In this [link](./resources/images/functional_requirements.md) you will find the definition of all expected CRUD endpoints.
 
 ## 4.2 Business Rules
 
-In this [link](./resources/business_rules.md) you will find the business rules for the app.
+In this [link](./resources/images/business_rules.md) you will find the business rules for the app.
 
 ## 4.3 Technical Requirements
 * Use TypeScript for server-side development.
