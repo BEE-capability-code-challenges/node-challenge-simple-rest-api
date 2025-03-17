@@ -69,11 +69,11 @@ The public side of the API it should allow users to view pets available for adop
 # 4. Instructions
 
 ## 4.1 Functional Requirements
-In this [link](./resources/images/functional_requirements.md) you will find the definition of all expected CRUD endpoints.
+In this [link](./resources/functional_requirements.md) you will find the definition of all expected CRUD endpoints.
 
 ## 4.2 Business Rules
 
-In this [link](./resources/images/business_rules.md) you will find the business rules for the app.
+In this [link](./resources/business_rules.md) you will find the business rules for the app.
 
 ## 4.3 Technical Requirements
 * Use TypeScript for server-side development.
